@@ -1,22 +1,18 @@
 package it.polito.tdp.bar.model;
 
-public class Eventi implements Comparable<Eventi>{
-	
-	public enum EventType {ARRIVO_GRUPPO_CLIENTI, USCITA_GRUPPO_CLIENTI};
+public class Eventi{
 	
 	private int time;
 	private int num_persone;
 	private int durata;
 	private float tolleranza;
-	private EventType type;
 	private int numeroTavolo;
 	
-	public Eventi(int time, int num_persone, int durata, float tolleranza, EventType type) {
+	public Eventi(int time, int num_persone, int durata, float tolleranza) {
 		this.time = time;
 		this.num_persone = num_persone;
 		this.durata = durata;
 		this.tolleranza = tolleranza;
-		this.type = type;
 	}
 
 	public int getTime() {
@@ -57,22 +53,6 @@ public class Eventi implements Comparable<Eventi>{
 
 	public void setTolleranza(float tolleranza) {
 		this.tolleranza = tolleranza;
-	}
-
-	public EventType getType() {
-		return type;
-	}
-
-	public void setType(EventType type) {
-		this.type = type;
-	}
-
-	@Override
-	public int compareTo(Eventi other) {
-	
-		return 0;
-	}
-	
-	
+	}	
 
 }
