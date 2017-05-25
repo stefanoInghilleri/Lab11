@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.bar.BarController">
-	<!-- TODO Add Nodes -->
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.102" fx:controller="it.polito.tdp.bar.BarController">
+   <center>
+      <Pane prefHeight="406.0" prefWidth="503.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="503.0" text="Lab 11 Simulazione bar" textFill="#f51111">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSimula" layoutX="226.0" layoutY="93.0" mnemonicParsing="false" onAction="#doSimula" text="Simula clienti" />
+            <TextArea fx:id="txtResult" editable="false" layoutX="3.0" layoutY="168.0" prefHeight="200.0" prefWidth="492.0" />
+            <Button fx:id="btnReset" layoutX="437.0" layoutY="380.0" mnemonicParsing="false" onAction="#doReset" text="Reset" />
+         </children>
+      </Pane>
+   </center>
 </BorderPane>
