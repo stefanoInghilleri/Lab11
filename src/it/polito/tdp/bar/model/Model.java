@@ -1,8 +1,6 @@
 package it.polito.tdp.bar.model;
 
 import java.util.*;
-import java.util.stream.Stream;
-
 import it.polito.tdp.bar.model.Eventi;
 
 public class Model {
