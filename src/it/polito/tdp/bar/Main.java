@@ -3,7 +3,7 @@ package it.polito.tdp.bar;
 import it.polito.tdp.bar.model.Model;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import javafx.scene.Scene;
+import javafx.scene.*;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
 
