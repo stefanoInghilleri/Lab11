@@ -2,18 +2,14 @@ package it.polito.tdp.bar.model;
 
 public class Statistiche {
 	
-	private int numero_totale_clienti=0;
-	private int clienti_soddisfatti=0;
-	private int numero_clienti_insoddisfatti=0;
-	
-	public Statistiche(int numero_totale_clienti, int clienti_soddisfatti, int numero_clienti_insoddisfatti) {
-		this.numero_totale_clienti = numero_totale_clienti;
-		this.clienti_soddisfatti = clienti_soddisfatti;
-		this.numero_clienti_insoddisfatti = numero_clienti_insoddisfatti;
-	}
+	private int numero_totale_clienti;
+	private int clienti_soddisfatti;
+	private int numero_clienti_insoddisfatti;
 
 	public Statistiche(){
-		
+		this.numero_totale_clienti=0;
+		this.clienti_soddisfatti=0;
+		this.numero_clienti_insoddisfatti=0;
 	}
 	
 	public int getNumero_totale_clienti() {
