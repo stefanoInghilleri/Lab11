@@ -12,7 +12,7 @@ public class Model {
 	
 	//stato del modello
 	private NavigableMap<Integer,Eventi> timeManager;
-	int tempo;
+	private int tempo;
 	
 	//variabili di interesse
 	private Statistiche statistica;
